@@ -5,7 +5,7 @@
 import Foundation
 
 internal final class FeedImageMapper {
-	struct Root: Decodable {
+	struct Root: Codable {
 		let items: [Item]
 
 		var feed: [FeedImage] {
@@ -13,7 +13,7 @@ internal final class FeedImageMapper {
 		}
 	}
 
-	struct Item: Decodable {
+	struct Item: Codable {
 		let image_id: UUID
 		let image_desc: String?
 		let image_loc: String?
