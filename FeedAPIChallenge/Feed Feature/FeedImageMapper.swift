@@ -5,7 +5,7 @@
 import Foundation
 
 enum FeedImageMapper {
-	struct Root: Codable {
+	struct Root: Decodable {
 		let items: [Item]
 
 		var feed: [FeedImage] {
@@ -13,7 +13,7 @@ enum FeedImageMapper {
 		}
 	}
 
-	struct Item: Codable {
+	struct Item: Decodable {
 		let image_id: UUID
 		let image_desc: String?
 		let image_loc: String?
