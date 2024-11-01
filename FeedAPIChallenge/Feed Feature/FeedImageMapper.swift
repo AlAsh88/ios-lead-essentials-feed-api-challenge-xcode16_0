@@ -9,7 +9,7 @@ enum FeedImageMapper {
 		let items: [Item]
 
 		var feed: [FeedImage] {
-			items.map { $0.item }
+			items.map(\.item)
 		}
 	}
 
