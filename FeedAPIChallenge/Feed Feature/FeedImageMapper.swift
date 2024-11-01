@@ -4,7 +4,7 @@
 
 import Foundation
 
-final class FeedImageMapper {
+enum FeedImageMapper {
 	struct Root: Codable {
 		let items: [Item]
 
